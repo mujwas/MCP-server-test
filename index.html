@@ -8,21 +8,110 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f0f0f0;
+            line-height: 1.6;
         }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            color: white;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
         h1 {
             color: #333;
             text-align: center;
+            margin-bottom: 2rem;
         }
-        p {
-            color: #666;
-            line-height: 1.6;
+        
+        .main-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to MCP Server Test</h1>
-    <p>This is a simple test page for our MCP server project.</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Welcome to MCP Server Test</h1>
+        
+        <div class="main-content">
+            <h2>About Our Project</h2>
+            <p>This is an enhanced version of our MCP server project page. We've added more content and improved the design to make it more user-friendly and informative.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Feature 1</h3>
+                    <p>Description of the first key feature of our MCP server project.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 2</h3>
+                    <p>Description of the second key feature of our MCP server project.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Feature 3</h3>
+                    <p>Description of the third key feature of our MCP server project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Contact us: info@mcpserver.test</p>
+        <p>© 2024 MCP Server Test. All rights reserved.</p>
+    </footer>
 </body>
 </html>
